@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 40% 55%;
+  padding: 40px;
 }
 
 .App-logo {
@@ -35,4 +38,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+input{
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.checkbox{
+  width:10%;
+}
+
+table{
+  text-align: left;
+  border: 1px solid black;
+
+
+}
+thead{
+  font-weight: 700;
+  border: 1px solid black;
+
+}
+tbody{
+  border: 1px solid black;
+}
+td{
+  border: 1px solid black;
+  padding: 3px;
 }
