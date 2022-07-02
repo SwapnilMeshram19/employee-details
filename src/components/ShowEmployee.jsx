@@ -21,31 +21,31 @@ const ShowEmployee = () => {
 
   return (
     <div>
-        <h3>Employee Details</h3>
+      <h3>Employee Details</h3>
       {loading ? (
         <h1>Loading.....</h1>
       ) : error ? (
         <h1>Someting Wrong Happned</h1>
       ) : (
         <table>
-            <thead>
-                <td>Sr.No</td>
-                <td>Name</td>
-                <td>Age</td>
-                <td>Address</td>
-                <td>Department</td>
-                <td>Employee ID</td>
-                <td>Salary</td>
-                <td>Married</td>
-            </thead>
-            {
-                data.map((employee) => (
-                    <EmployeeTable employee={employee} key={employee.id} />
-                  ))
-            }
-
+          <thead>
+            <tr>
+              <th>Sr.No</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Address</th>
+              <th>Department</th>
+              <th>Employee ID</th>
+              <th>Salary</th>
+              <th>Married</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((employee) => (
+              <EmployeeTable employee={employee} key={employee.id} />
+            ))}
+          </tbody>
         </table>
-        
       )}
     </div>
   );
